@@ -4,7 +4,6 @@ class SessionsController < ApplicationController
     session[:session_hello] ||= "Nairobi"
     cookies[:cookies_hello] ||= "World"
     render json: { session: session, cookies: cookies.to_hash }
-    byebug
   end
 
 end
